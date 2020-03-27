@@ -4,7 +4,7 @@ public class AppComLeituradeArquivo {
     public static void main(String args[]) {
 
         ListaParaArrumar arvoreDeIPs = new ListaParaArrumar();
-        //imprimeResultado(lista, "exemplo1.txt");
+        imprimeResultado(arvoreDeIPs, "exemplo1.txt");
         //imprimeResultado(lista, "exemplo2.txt");
         //imprimeResultado(lista, "exemplo3.txt");
         //imprimeResultado(lista, "exemplo4.txt");
@@ -32,7 +32,8 @@ public class AppComLeituradeArquivo {
 
             if (listaArrumada == null) System.out.println("Erro no arquivo!\n");
 
-            System.out.println(listaArrumada);
+            System.out.println("\nÁrvore lida pelo position central pelo método imprime resultado:");
+            System.out.println(listaArrumada.positionsCentral());
 
         } catch (ArithmeticException x) {
             System.out.println("Tentativa de divisão por zero! " + x);
