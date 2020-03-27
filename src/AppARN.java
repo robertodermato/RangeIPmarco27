@@ -12,7 +12,7 @@ public class AppARN {
         RangeIP range4 = new RangeIP(5,13);
         RangeIP range5 = new RangeIP(15,20);
         RangeIP range6 = new RangeIP(15,25);
-        RangeIP range7 = new RangeIP(15,20);
+        RangeIP range7 = new RangeIP(15,40);
 
 
         //Testando método add()
