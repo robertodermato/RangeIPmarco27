@@ -35,6 +35,9 @@ public class AppComLeituradeArquivo {
             System.out.println("\nÁrvore lida pelo position central pelo método imprime resultado:");
             System.out.println(listaArrumada.positionsCentral());
 
+            System.out.println("\nÁrvore arrumada pelo método arrumalista da ARN");
+            System.out.println(listaArrumada.arrumaLista(listaArrumada.positionsCentral()));
+
         } catch (ArithmeticException x) {
             System.out.println("Tentativa de divisão por zero! " + x);
             System.out.println("");
