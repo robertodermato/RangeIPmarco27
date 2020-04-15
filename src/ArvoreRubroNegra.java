@@ -892,6 +892,9 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
         RangeIP rangeParaAdicionar = listaParaArrumar.peekFirst();
         RangeIP rangeAux = listaParaArrumar.pop();
 
+        //System.out.println("Peek first" + rangeParaAdicionar);
+        //System.out.println("Rangeaux" + rangeAux);
+
         while (listaParaArrumar.size()>0){
 
             while (listaParaArrumar.size()>0 && rangeAux.getIpInicial()<=(rangeParaAdicionar.getIpFinal())+1){
@@ -903,7 +906,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
 
             listaArrumada.add(rangeParaAdicionar);
             if (listaParaArrumar.size()>0) {
-                rangeAux = listaParaArrumar.pop();
+                //rangeAux = listaParaArrumar.pop();
                 rangeParaAdicionar = rangeAux;
             }
         }
