@@ -924,7 +924,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                     RangeIP rangeParaAdicionar = new RangeIP(ipInicial, ipFinal);
 
                     arvoreDeIPs.add(rangeParaAdicionar);
-                    System.out.println("Range para adicionar" + rangeParaAdicionar);
+
 
                 }
             }

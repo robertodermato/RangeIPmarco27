@@ -13,24 +13,12 @@ public class AppLeituraRoberto {
     //App
     public static void main(String args[]) {
 
-        imprimeResultado("exemplo1.txt");
+        //imprimeResultado("exemplo1.txt");
         //imprimeResultado(lista, "exemplo2.txt");
-        //imprimeResultado(lista, "exemplo3.txt");
+        //imprimeResultado( "exemplo3.txt");
         //imprimeResultado(lista, "exemplo4.txt");
-        //imprimeResultado(lista, "exemplo5.txt");
-        //imprimeResultado(lista, "caso01.txt");
-        //imprimeResultado(lista, "caso02.txt");
-        //imprimeResultado(lista, "caso03.txt");
-        //imprimeResultado(lista, "caso04.txt");
-        //imprimeResultado(lista, "caso05.txt");
-        //imprimeResultado(lista, "caso06.txt");
-        //imprimeResultado(lista, "caso07.txt");
-        //imprimeResultado(arvoreDeIPs, "caso08.txt");
-        //imprimeResultado(lista, "caso09.txt");
-        //imprimeResultado(lista, "caso10.txt");
-        //imprimeResultado(lista, "caso11.txt");
-        //imprimeResultado(lista, "caso12.txt");
-
+        //imprimeResultado( "exemplo5.txt");
+        imprimeResultado("cohen01.txt");
 
     }
 

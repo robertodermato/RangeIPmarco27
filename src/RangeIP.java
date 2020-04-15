@@ -28,7 +28,7 @@ public class RangeIP implements Comparable<RangeIP> {
 
         @Override
         public String toString() {
-            return "IP inicial: " + ipInicial + " IP final: " + ipFinal;
+            return "IP inicial: " + ipInicial + " IP final: " + ipFinal + "\n";
         }
 
         /*
