@@ -53,9 +53,9 @@ public class ListaParaArrumar {
                     int ipInicial = Integer.parseInt(ipInicialStr);
                     int ipFinal = Integer.parseInt(ipFinalStr);
 
-                    RangeIP rangeParaAdicionar = new RangeIP(ipInicial, ipFinal);
+                    //RangeIP rangeParaAdicionar = new RangeIP(ipInicial, ipFinal);
 
-                    arvoreDeIPs.add(rangeParaAdicionar);
+                    //arvoreDeIPs.add(rangeParaAdicionar);
 
                 }
             }

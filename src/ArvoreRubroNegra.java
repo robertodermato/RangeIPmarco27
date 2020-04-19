@@ -892,6 +892,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
         }
     }
 
+
     //lê o arquivo e coloca ranges na árvore
     public ArvoreRubroNegra colocaRangesNaArvore(String arquivo) {
         Path path1 = Paths.get(arquivo);
@@ -900,14 +901,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
         try (BufferedReader reader = Files.newBufferedReader(path1.getFileName(), Charset.forName("utf8"))) {
             String line = null;
 
-            /*
-            //Para remover linhas vazias do arquivo recebido
-            while ((line = reader.readLine()) != null) {
-                String s = s.replaceAll("\n", "");
-                s = s.replaceAll("\r", "");
-                s = s.replaceAll("\t", "");
-            }
-             */
+
 
             while ((line = reader.readLine()) != null) {
                 if(!line.isEmpty()){
@@ -929,8 +923,8 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                 }
             }
 
-            System.out.println("Lista que foi montada na árvore");
-            System.out.println(arvoreDeIPs.positionsCentral());
+            //System.out.println("Lista que foi montada na árvore");
+            //System.out.println(arvoreDeIPs.positionsCentral());
 
         } catch (IOException x) {
             System.err.format("Erro de E/S: %s%n", x);
@@ -959,11 +953,23 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                 rangeAux = listaParaArrumar.pop();
             }
 
+            if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()<=(rangeParaAdicionar.getIpFinal())+1) {
+                if (rangeAux.getIpFinal()>rangeParaAdicionar.getIpFinal())
+                rangeParaAdicionar.setIpFinal(rangeAux.getIpFinal());
+            }
+
             listaArrumada.add(rangeParaAdicionar);
+
+            if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()>(rangeParaAdicionar.getIpFinal())+1) {
+                listaArrumada.add(rangeAux);
+            }
+
+
             if (listaParaArrumar.size()>0) {
                 //rangeAux = listaParaArrumar.pop();
                 rangeParaAdicionar = rangeAux;
             }
+
         }
 
         return listaArrumada;

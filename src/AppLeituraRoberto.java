@@ -18,7 +18,21 @@ public class AppLeituraRoberto {
         //imprimeResultado( "exemplo3.txt");
         //imprimeResultado(lista, "exemplo4.txt");
         //imprimeResultado( "exemplo5.txt");
+
         imprimeResultado("cohen01.txt");
+        imprimeResultado("cohen02.txt");
+        imprimeResultado("cohen03.txt");
+        imprimeResultado("cohen04.txt");
+        imprimeResultado("cohen05.txt");
+        imprimeResultado("cohen06.txt");
+        imprimeResultado("cohen07.txt"); //dando erro
+        imprimeResultado("cohen08.txt");
+        imprimeResultado("cohen09.txt");
+        imprimeResultado("cohen10.txt");
+        imprimeResultado("cohen11.txt"); //dando erro
+        imprimeResultado("cohen12.txt");
+
+
 
     }
 
@@ -32,8 +46,8 @@ public class AppLeituraRoberto {
 
             if (arvoreComIPs == null) System.out.println("Erro no arquivo!\n");
 
-            System.out.println("\nÁrvore lida pelo position central pelo método imprime resultado:");
-            System.out.println(arvoreComIPs.positionsCentral());
+            //System.out.println("\nÁrvore lida pelo position central pelo método imprime resultado:");
+            //System.out.println(arvoreComIPs.positionsCentral());
 
             System.out.println("\nÁrvore arrumada pelo método arrumalista da ARN");
             System.out.println(listaParaArrumar.arrumaLista(arvoreComIPs.positionsCentral()));
