@@ -953,6 +953,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                 rangeAux = listaParaArrumar.pop();
             }
 
+            //esse if é da gambiarra
             if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()<=(rangeParaAdicionar.getIpFinal())+1) {
                 if (rangeAux.getIpFinal()>rangeParaAdicionar.getIpFinal())
                 rangeParaAdicionar.setIpFinal(rangeAux.getIpFinal());
@@ -960,6 +961,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
 
             listaArrumada.add(rangeParaAdicionar);
 
+            //esse if também é da gambiarra
             if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()>(rangeParaAdicionar.getIpFinal())+1) {
                 listaArrumada.add(rangeAux);
             }
