@@ -8,31 +8,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class AppLeituraRoberto {
+public class AppFinal {
 
     //App
     public static void main(String args[]) {
-
-        //imprimeResultado("exemplo1.txt");
-        //imprimeResultado(lista, "exemplo2.txt");
-        //imprimeResultado( "exemplo3.txt");
-        //imprimeResultado(lista, "exemplo4.txt");
-        //imprimeResultado( "exemplo5.txt");
 
         imprimeResultado("cohen01.txt");
         imprimeResultado("cohen02.txt");
         imprimeResultado("cohen03.txt");
         imprimeResultado("cohen04.txt");
         imprimeResultado("cohen05.txt");
-        imprimeResultado("cohen06.txt");
-        imprimeResultado("cohen07.txt"); //dando erro
-        imprimeResultado("cohen08.txt");
-        imprimeResultado("cohen09.txt");
-        imprimeResultado("cohen10.txt");
-        imprimeResultado("cohen11.txt"); //dando erro
-        imprimeResultado("cohen12.txt");
-
-
+        //imprimeResultado("cohen06.txt");
+        //imprimeResultado("cohen07.txt");
+        //imprimeResultado("cohen08.txt");
+        //imprimeResultado("cohen09.txt");
+        //imprimeResultado("cohen10.txt");
+        //imprimeResultado("cohen11.txt");
+        //imprimeResultado("cohen12.txt");
 
     }
 

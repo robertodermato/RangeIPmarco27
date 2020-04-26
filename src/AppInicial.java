@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class AppComLeituradeArquivo {
+public class AppInicial {
 
     //App
     public static void main(String args[]) {
