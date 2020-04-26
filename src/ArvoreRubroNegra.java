@@ -892,7 +892,6 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
         }
     }
 
-
     //lê o arquivo e coloca ranges na árvore
     public ArvoreRubroNegra colocaRangesNaArvore(String arquivo) {
         Path path1 = Paths.get(arquivo);
@@ -900,8 +899,6 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
 
         try (BufferedReader reader = Files.newBufferedReader(path1.getFileName(), Charset.forName("utf8"))) {
             String line = null;
-
-
 
             while ((line = reader.readLine()) != null) {
                 if(!line.isEmpty()){
@@ -923,9 +920,6 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                 }
             }
 
-            //System.out.println("Lista que foi montada na árvore");
-            //System.out.println(arvoreDeIPs.positionsCentral());
-
         } catch (IOException x) {
             System.err.format("Erro de E/S: %s%n", x);
         }
@@ -941,9 +935,6 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
         RangeIP rangeParaAdicionar = listaParaArrumar.peekFirst();
         RangeIP rangeAux = listaParaArrumar.pop();
 
-        //System.out.println("Peek first" + rangeParaAdicionar);
-        //System.out.println("Rangeaux" + rangeAux);
-
         while (listaParaArrumar.size()>0){
 
             while (listaParaArrumar.size()>0 && rangeAux.getIpInicial()<=(rangeParaAdicionar.getIpFinal())+1){
@@ -953,7 +944,7 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
                 rangeAux = listaParaArrumar.pop();
             }
 
-            //esse if é da gambiarra
+            //if corretivo
             if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()<=(rangeParaAdicionar.getIpFinal())+1) {
                 if (rangeAux.getIpFinal()>rangeParaAdicionar.getIpFinal())
                 rangeParaAdicionar.setIpFinal(rangeAux.getIpFinal());
@@ -961,20 +952,15 @@ public class ArvoreRubroNegra<T extends Comparable<T>> {
 
             listaArrumada.add(rangeParaAdicionar);
 
-            //esse if também é da gambiarra
+            //if corretivo
             if (listaParaArrumar.size()==0 && rangeAux.getIpInicial()>(rangeParaAdicionar.getIpFinal())+1) {
                 listaArrumada.add(rangeAux);
             }
 
-
             if (listaParaArrumar.size()>0) {
-                //rangeAux = listaParaArrumar.pop();
-                rangeParaAdicionar = rangeAux;
+               rangeParaAdicionar = rangeAux;
             }
-
         }
-
         return listaArrumada;
     }
-
 }
