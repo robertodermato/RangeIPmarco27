@@ -16,14 +16,14 @@ public class AppFinal {
         imprimeResultado("cohen02.txt");
         imprimeResultado("cohen03.txt");
         imprimeResultado("cohen04.txt");
-        //imprimeResultado("cohen05.txt");
-        //imprimeResultado("cohen06.txt");
-        //imprimeResultado("cohen07.txt");
-        //imprimeResultado("cohen08.txt");
-        //imprimeResultado("cohen09.txt");
-        //imprimeResultado("cohen10.txt");
-        //imprimeResultado("cohen11.txt");
-        //imprimeResultado("cohen12.txt");
+        imprimeResultado("cohen05.txt");
+        imprimeResultado("cohen06.txt");
+        imprimeResultado("cohen07.txt");
+        imprimeResultado("cohen08.txt");
+        imprimeResultado("cohen09.txt");
+        imprimeResultado("cohen10.txt");
+        imprimeResultado("cohen11.txt");
+        imprimeResultado("cohen12.txt");
 
     }
 
